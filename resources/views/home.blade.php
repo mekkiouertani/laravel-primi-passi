@@ -422,7 +422,7 @@
 <body class="antialiased">
     <header>
         <nav>
-            <a href="/home">Home</a>
+            <a href="/">Home</a>
             <a href="/main">Main</a>
             <a href="/info">Info</a>
         </nav>
