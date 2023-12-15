@@ -24,5 +24,15 @@ Route::get('/main', function () {
 })->name('main');
 
 Route::get('/info', function () {
-    return view('pages.info');
+    $data = [
+        'name' => 'Bojack',
+        'surname' => 'Horseman',
+        'address' => 'Hollywoo',
+        'number' => '1',
+        'city' => 'Los Angeles',
+        'state' => 'California',
+        'zip' => '90001',
+        'phone' => '555-555-5555',
+    ];
+    return view('pages.info', $data);
 })->name('info');

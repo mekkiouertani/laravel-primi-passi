@@ -413,6 +413,10 @@
         main {
             margin: 10px 100px;
         }
+
+        li {
+            list-style: circle;
+        }
     </style>
 </head>
 
@@ -425,7 +429,13 @@
         </nav>
     </header>
     <main>
-        <h2>Info</h2>
+        <h2>Info di {{$name . ' ' . $surname}}</h2>
+        <ul>
+            <li>Indirizzo: {{$address . ' ' . $number}}</li>
+            <li>Città: {{$city}}</li>
+            <li>Stato: {{$state}}</li>
+            <li>Zip: {{$zip}}</li>
+            <li>Telefono: {{$phone}}</li>
     </main>
 
 </body>
